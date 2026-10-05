@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* TOP BANNER */
+
+.top-banner {
+    height: 100px;
+    background-color: #222;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+}
+
+
+/* TITLE */
+
+.site-title {
+    flex: 1;
+}
+
+.site-title h1 {
+    margin: 0;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+/* LOGO */
+
+.site-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-logo img {
+    width: 80px;
+    height: auto;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    padding: 40px;
+    min-height: 600px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
