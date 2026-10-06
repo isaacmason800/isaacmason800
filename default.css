@@ -136,6 +136,11 @@ footer {
     box-sizing: border-box;
 }
 
+.memorial-picture img {
+    width: 185px;
+    height: 140px;
+    object-fit: contain;
+}
 .memorial-picture p {
     margin: 0;
 }
