@@ -28,53 +28,56 @@
     </header>
 
 
-    <main class="memoriam">
+<main class="memoriam">
 
-        <h2>In Memoriam</h2>
+    <h2>In Memoriam</h2>
 
-        <p>To the brews, brewers and locals lost over the years</p>
+    <p>To the brews, brewers and locals lost over the years</p>
 
 
-        <section class="memorial-entry">
+    <article class="memorial-entry">
 
-            <!-- Beer information -->
-            <div class="memorial-info">
-                <h3>Name of beer etc</h3>
-                <p>
-                    Short text here
-                </p>
+        <div class="memorial-info">
+            <h3>Old Brewery Bitter</h3>
+
+            <p>
+                A short description of the beer, brewery or local.
+            </p>
+        </div>
+
+
+        <div class="memorial-picture">
+            <img src="beer1.jpg" alt="Old Brewery Bitter">
+        </div>
+
+
+        <div class="raise-beer">
+
+            <div class="raise-label">
+                Beers raised
             </div>
 
-
-            <!-- Picture -->
-            <div class="memorial-picture">
-                <p>Picture</p>
+            <div class="beer-count" id="count-1">
+                0
             </div>
 
+            <button
+                class="beer-button"
+                onclick="raiseBeer(1)">
+                🍺
+            </button>
 
-            <!-- Beer raising section -->
-            <div class="raise-beer">
+            <button
+                class="raise-text-button"
+                onclick="raiseBeer(1)">
+                Click here to raise a beer
+            </button>
 
-                <label>Count of<br>how many times raise a beer<br>button clicked</label>
+        </div>
 
-                <div class="beer-count" id="beerCount">
-                    0
-                </div>
+    </article>
 
-                <button class="beer-button" onclick="raiseBeer()">
-                    <img src="ccclogo.png" alt="Raise a beer">
-                </button>
-
-                <button class="raise-text-button" onclick="raiseBeer()">
-                    Click here to raise a beer
-                </button>
-
-            </div>
-
-        </section>
-
-    </main>
-
+</main>
 
     <footer>
         <p>&copy; 2026 Cheap Chaps Cask</p>
