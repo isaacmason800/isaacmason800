@@ -41,7 +41,7 @@
             <h3>Lancashire Best Bitter</h3>
 
             <p>
-                A short description of the beer, brewery or local.
+                Lancashrie best bitter, brewed by The Pictish Brewing Company,<br>May it rest in peace
             </p>
         </div>
 
@@ -51,30 +51,6 @@
         </div>
 
 
-        <div class="raise-beer">
-
-            <div class="raise-label">
-                Beers raised
-            </div>
-
-            <div class="beer-count" id="count-1">
-                0
-            </div>
-
-            <button
-                class="beer-button"
-                onclick="raiseBeer(1)">
-                <img src="beer.png" alt="Raise a beer">
-            </button>
-
-            <button
-                class="raise-text-button"
-                onclick="raiseBeer(1)">
-                Click here to raise a beer
-            </button>
-
-        </div>
-
     </article>
 
 </main>
@@ -82,68 +58,6 @@
 <footer>
     <p>&copy; 2026 Cheap Chaps Cask</p>
 </footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-<script>
-
-    const SUPABASE_URL = "https://yzhdxvymqmmokjettsfn.supabase.co";
-
-    const SUPABASE_KEY = "sb_publishable_TXxCuZ1-eOoNmPc15ERRXg_TQRF-knx";
-
-    const supabase = window.supabase.createClient(
-        SUPABASE_URL,
-        SUPABASE_KEY
-    );
-
-
-    async function loadBeerCount() {
-
-        const { data, error } = await supabase
-            .from("beer_raises")
-            .select("count")
-            .eq("beer_id", 1)
-            .single();
-
-
-        if (error) {
-
-            console.error("Could not load beer count:", error);
-
-            return;
-        }
-
-
-        document.getElementById("count-1").textContent = data.count;
-
-    }
-
-
-    async function raiseBeer(beerId) {
-
-        const { data, error } = await supabase
-            .rpc("raise_beer", {
-                p_beer_id: beerId
-            });
-
-
-        if (error) {
-
-            console.error("Could not raise beer:", error);
-
-            return;
-        }
-
-
-        document.getElementById("count-" + beerId).textContent = data;
-
-    }
-
-
-    loadBeerCount();
-
-</script>
 
 
 </body>
