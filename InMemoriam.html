@@ -1,64 +1,145 @@
+lace your current page with this:
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <title>In Memoriam</title>
+
     <link rel="stylesheet" href="default.css">
+
 </head>
 
+
 <body>
+
 
     <header class="top-banner">
 
         <div class="site-title">
+
             <h1>Cheap Chaps Cask</h1>
+
         </div>
 
+
         <nav class="navigation">
+
             <a href="index.html">Home</a>
             <a href="#">Beers</a>
             <a href="#">Taverns</a>
             <a href="#">More</a>
             <a href="#">Contact</a>
+
         </nav>
 
+
         <div class="site-logo">
-            <img src="CCClogo.png" alt="Cheap Chaps Cask logo">
+
+            <img
+                src="CCClogo.png"
+                alt="Cheap Chaps Cask logo"
+            >
+
         </div>
 
     </header>
 
 
-<main class="memoriam">
 
-    <h2>In Memoriam</h2>
-
-    <p>To the brews, brewers and locals lost over the years</p>
+    <main class="memoriam">
 
 
-    <article class="memorial-entry">
-
-        <div class="memorial-info">
-            <h3>Lancashire Best Bitter</h3>
-
-            <p>
-                Lancashrie best bitter, brewed by The Pictish Brewing Company,<br>May it rest in peace
-            </p>
-        </div>
+        <h2>In Memoriam</h2>
 
 
-        <div class="memorial-picture">
-            <img src="LancashireBestBitter.png" alt="Old Brewery Bitter">
-        </div>
+        <p>
+            To the brews, brewers and locals lost over the years
+        </p>
 
 
-    </article>
 
-</main>
+        <article class="memorial-entry">
 
-<footer>
-    <p>&copy; 2026 Cheap Chaps Cask</p>
-</footer>
+
+            <!-- BEER INFORMATION -->
+
+            <div class="memorial-info">
+
+                <h3>Lancashire Best Bitter</h3>
+
+                <p>
+                    Lancashire Best Bitter, brewed by The Pictish Brewing Company,
+                    <br>
+                    May it rest in peace
+                </p>
+
+            </div>
+
+
+
+            <!-- BEER PICTURE -->
+
+            <div class="memorial-picture">
+
+                <img
+                    src="LancashireBestBitter.png"
+                    alt="Lancashire Best Bitter"
+                >
+
+            </div>
+
+
+
+            <!-- RAISE A BEER -->
+
+            <div class="tribute">
+
+                <img
+                    id="tributeBeer"
+                    src="beer.png"
+                    alt="Raise a beer"
+                >
+
+
+                <button
+                    class="raise-button"
+                    onclick="raiseBeer()"
+                >
+                    Raise a beer
+                </button>
+
+            </div>
+
+
+        </article>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>&copy; 2026 Cheap Chaps Cask</p>
+
+    </footer>
+
+
+
+    <script>
+
+        function raiseBeer() {
+
+            document.getElementById("tributeBeer").src =
+                "raised-beer.png";
+
+        }
+
+    </script>
 
 
 </body>
+
 </html>
