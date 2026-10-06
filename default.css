@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Lucida Console", monospace;
 }
 
 
@@ -8,8 +8,8 @@ body {
 
 .top-banner {
     height: 100px;
-    background-color: #222;
-    color: white;
+    background-color: #f2e383;
+    color: red;
 
     display: flex;
     align-items: center;
@@ -72,8 +72,8 @@ main {
 /* FOOTER */
 
 footer {
-    background-color: #222;
-    color: white;
+    background-color: #f2e383;
+    color: White;
     text-align: center;
     padding: 20px;
 }
