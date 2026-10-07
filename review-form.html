@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cheap Chaps Cask - Review Generator</title>
+
+    <link rel="stylesheet" href="review-form.css">
+
+</head>
+
+
+<body>
+
+    <header class="form-header">
+
+        <div class="site-title">
+            <h1>Cheap Chaps Cask</h1>
+            <p>Beer Review Generator</p>
+        </div>
+
+        <div class="site-logo">
+            <img src="ccclogo.png" alt="Cheap Chaps Cask logo">
+        </div>
+
+    </header>
+
+
+    <main class="form-container">
+
+        <h2>Create Beer Review</h2>
+
+        <p class="instructions">
+            Complete the form below to create a Cheap Chaps Cask beer review.
+        </p>
+
+
+        <!-- =========================================
+             BEER INFORMATION
+             ========================================= -->
+
+        <section class="form-section">
+
+            <h3>Beer Information</h3>
+
+
+            <label for="beerName">
+                Beer Name
+            </label>
+
+            <input
+                type="text"
+                id="beerName"
+                placeholder="e.g. Old Speckled Hen"
+            >
+
+
+            <label for="reviewer">
+                Reviewer
+            </label>
+
+            <input
+                type="text"
+                id="reviewer"
+                placeholder="Your name"
+            >
+
+
+            <label for="introduction">
+                Introduction
+            </label>
+
+            <textarea
+                id="introduction"
+                rows="5"
+                placeholder="Introduce the beer..."
+            ></textarea>
+
+
+            <label for="beerImage">
+                Beer Image
+            </label>
+
+            <input
+                type="file"
+                id="beerImage"
+                accept="image/*"
+            >
+
+            <p class="help-text">
+                Choose a photograph of the beer. The image will appear below
+                the introduction in the finished review.
+            </p>
+
+            <div id="imagePreviewContainer" class="image-preview-container">
+
+                <p>No image selected.</p>
+
+                <img
+                    id="imagePreview"
+                    src=""
+                    alt="Beer image preview"
+                >
+
+            </div>
+
+
+            <label for="reviewText">
+                Review
+            </label>
+
+            <textarea
+                id="reviewText"
+                rows="10"
+                placeholder="Write your full beer review..."
+            ></textarea>
+
+        </section>
+
+
+        <!-- =========================================
+             SCORE CARD
+             ========================================= -->
+
+        <section class="form-section">
+
+            <h3>Score Card</h3>
+
+
+            <label for="taste">
+                Taste Score
+            </label>
+
+            <div class="score-input">
+
+                <input
+                    type="number"
+                    id="taste"
+                    min="0"
+                    max="10"
+                    step="0.5"
+                    placeholder="8"
+                >
+
+                <span>/ 10</span>
+
+            </div>
+
+
+            <label for="tastingNotes">
+                Tasting Notes
+            </label>
+
+            <textarea
+                id="tastingNotes"
+                rows="4"
+                placeholder="Malty, sweet, bitter, fruity..."
+            ></textarea>
+
+
+            <label for="presentation">
+                Presentation
+            </label>
+
+            <textarea
+                id="presentation"
+                rows="4"
+                placeholder="Colour, head, appearance..."
+            ></textarea>
+
+
+            <label for="deliveryMethod">
+                Delivery Method
+            </label>
+
+            <textarea
+                id="deliveryMethod"
+                rows="3"
+                placeholder="Hand-pulled cask, keg, bottle, can..."
+            ></textarea>
+
+
+            <label for="purchaseLocation">
+                Purchase Location
+            </label>
+
+            <input
+                type="text"
+                id="purchaseLocation"
+                placeholder="Name of pub / tavern / shop"
+            >
+
+
+            <label for="locationScore">
+                Purchase Location Score
+            </label>
+
+            <div class="score-input">
+
+                <input
+                    type="number"
+                    id="locationScore"
+                    min="0"
+                    max="10"
+                    step="0.5"
+                    placeholder="9"
+                >
+
+                <span>/ 10</span>
+
+            </div>
+
+
+            <label for="price">
+                Price Per Pint (£)
+            </label>
+
+            <input
+                type="number"
+                id="price"
+                min="0"
+                step="0.01"
+                placeholder="4.50"
+            >
+
+
+            <label for="overallScore">
+                Overall Cheap Chaps Cask Score
+            </label>
+
+            <div class="score-input">
+
+                <input
+                    type="number"
+                    id="overallScore"
+                    min="0"
+                    max="10"
+                    step="0.5"
+                    placeholder="8.5"
+                >
+
+                <span>/ 10</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             BUTTONS
+             ========================================= -->
+
+        <section class="button-section">
+
+            <button
+                type="button"
+                id="previewButton"
+                class="primary-button"
+            >
+                Preview Review
+            </button>
+
+
+            <button
+                type="button"
+                id="generateButton"
+                class="secondary-button"
+            >
+                Generate Review
+            </button>
+
+        </section>
+
+
+        <!-- =========================================
+             PREVIEW
+             ========================================= -->
+
+        <section
+            id="reviewPreviewSection"
+            class="preview-section"
+        >
+
+            <h2>Review Preview</h2>
+
+            <div id="reviewPreview">
+
+                <p>
+                    Your finished review will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Cheap Chaps Cask
+        </p>
+
+    </footer>
+
+
+    <script src="review-form.js"></script>
+
+</body>
+
+</html>

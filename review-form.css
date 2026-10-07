@@ -1,0 +1,542 @@
+/* ========================================
+   GENERAL PAGE
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #111111;
+}
+
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+.form-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 120px;
+
+    padding: 10px 30px;
+
+    background-color: #f5e682;
+}
+
+
+.site-title h1 {
+    margin: 0;
+
+    color: #e00000;
+
+    font-family: Georgia, serif;
+
+    font-size: 2.5rem;
+}
+
+.site-title p {
+    margin: 5px 0 0 0;
+
+    font-size: 1.1rem;
+}
+
+
+.site-logo img {
+    width: 130px;
+    height: auto;
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+   ======================================== */
+
+.form-container {
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    padding: 0 25px;
+}
+
+
+.form-container > h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 5px;
+}
+
+
+.instructions {
+    margin-bottom: 30px;
+
+    color: #555555;
+}
+
+
+/* ========================================
+   FORM SECTIONS
+   ======================================== */
+
+.form-section {
+    margin-bottom: 30px;
+
+    padding: 30px;
+
+    border: 2px solid #333333;
+
+    border-radius: 10px;
+
+    background-color: #f5f1e8;
+}
+
+
+.form-section h3 {
+    margin-top: 0;
+
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #333333;
+
+    font-size: 1.5rem;
+}
+
+
+/* ========================================
+   FORM ELEMENTS
+   ======================================== */
+
+label {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #888888;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    background-color: #ffffff;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #e00000;
+
+    border-color: #e00000;
+}
+
+
+/* ========================================
+   FILE UPLOAD
+   ======================================== */
+
+input[type="file"] {
+    padding: 10px;
+
+    background-color: #ffffff;
+
+    cursor: pointer;
+}
+
+
+.help-text {
+    font-size: 0.9rem;
+
+    color: #666666;
+}
+
+
+/* ========================================
+   IMAGE PREVIEW
+   ======================================== */
+
+.image-preview-container {
+    margin-top: 15px;
+
+    min-height: 100px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border: 2px dashed #999999;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+}
+
+
+.image-preview-container p {
+    color: #777777;
+}
+
+
+#imagePreview {
+    display: none;
+
+    max-width: 100%;
+
+    max-height: 500px;
+
+    margin: auto;
+
+    border-radius: 8px;
+}
+
+
+/* ========================================
+   SCORE INPUT
+   ======================================== */
+
+.score-input {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    max-width: 200px;
+}
+
+
+.score-input input {
+    width: 120px;
+}
+
+
+.score-input span {
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.button-section {
+    display: flex;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+
+button {
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.primary-button {
+    background-color: #e00000;
+
+    color: #ffffff;
+}
+
+
+.secondary-button {
+    background-color: #333333;
+
+    color: #ffffff;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* ========================================
+   REVIEW PREVIEW
+   ======================================== */
+
+.preview-section {
+    margin-top: 40px;
+
+    padding: 30px;
+
+    border-top: 3px solid #333333;
+}
+
+
+.preview-section > h2 {
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   GENERATED REVIEW
+   ======================================== */
+
+.generated-review {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 330px;
+
+    gap: 40px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.generated-review-content {
+    min-width: 0;
+}
+
+
+.generated-review-content h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 5px;
+}
+
+
+.generated-review-content h3 {
+    margin-top: 0;
+}
+
+
+.review-image {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 25px 0;
+}
+
+
+.review-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    border: 2px solid #333333;
+}
+
+
+/* ========================================
+   SCORE CARD
+   ======================================== */
+
+.generated-score-card {
+    width: 330px;
+
+    padding: 25px;
+
+    border: 2px solid #333333;
+
+    border-radius: 10px;
+
+    background-color: #f5f1e8;
+}
+
+
+.generated-score-card > h2 {
+    text-align: center;
+
+    margin-top: 0;
+
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #333333;
+}
+
+
+.generated-score-item {
+    padding: 12px 0;
+
+    border-bottom: 1px solid #bbbbbb;
+}
+
+
+.generated-score-item h4 {
+    margin: 0 0 6px 0;
+}
+
+
+.generated-score-item p {
+    margin: 4px 0;
+
+    line-height: 1.4;
+}
+
+
+.generated-score {
+    font-size: 1.3rem;
+
+    font-weight: bold;
+}
+
+
+.generated-price {
+    font-size: 1.3rem;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   OVERALL SCORE
+   ======================================== */
+
+.generated-overall-score {
+    margin-top: 25px;
+
+    padding: 20px 15px;
+
+    text-align: center;
+
+    border: 3px solid #333333;
+
+    border-radius: 10px;
+
+    background-color: #e8dfc9;
+}
+
+
+.generated-overall-label {
+    margin: 0;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.generated-overall-number {
+    margin: 5px 0 0 0;
+
+    font-size: 4rem;
+
+    line-height: 1;
+
+    font-weight: bold;
+}
+
+
+.generated-overall-out-of {
+    margin: 5px 0 0 0;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    margin-top: 60px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #f5e682;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .form-header {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+
+    .site-title h1 {
+        font-size: 2rem;
+    }
+
+
+    .button-section {
+        flex-direction: column;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+
+    .generated-review {
+        grid-template-columns: 1fr;
+    }
+
+
+    .generated-score-card {
+        width: 100%;
+    }
+
+
+    .generated-review-content h2 {
+        font-size: 2rem;
+    }
+
+}
